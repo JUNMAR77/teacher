@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/members','Members\MembersController@store');
+Route::patch('/members/{member}','Members\MembersController@update');
